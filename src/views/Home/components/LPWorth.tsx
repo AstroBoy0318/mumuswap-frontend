@@ -47,7 +47,7 @@ const LPWorth = () => {
 
   return (
     <MainContainer>
-      <Heading color="primary" size="xl" style={{ width:"100%",textAlign: "center" }}>Helium 3 LP Worth</Heading>
+      <Heading color="primary" size="xl" style={{ width:"100%",textAlign: "center" }}>Dequ 3 LP Worth</Heading>
       <div style={{width: "80%",margin: "0 auto", marginTop: "3em"}}>
       <ItemDiv>
         <LabelDiv>

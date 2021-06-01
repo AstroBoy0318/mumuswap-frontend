@@ -59,7 +59,7 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody style={{padding: "24px 10px",paddingBottom: "5px"}}>
         <Heading size="xl" mb="24px" color="primary" style={{marginTop: '10px', marginBottom: '70px'}}>
-          Helium 3 Stats
+          Dequ 3 Stats
         </Heading>
         <Row>
           <Text fontSize="14px" color="text">Total DEQU Supply</Text>

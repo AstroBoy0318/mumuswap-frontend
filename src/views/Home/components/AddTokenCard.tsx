@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Button, Card, Heading, Text } from '@pancakeswap-libs/uikit'
 import { useCake } from '../../../hooks/useContract'
 import { getWeb3 } from '../../../utils/web3'
+import { getCakeAddress } from '../../../utils/addressHelpers'
 
 const MainContainer = styled(Card)`
   padding: 24px;
@@ -49,7 +50,7 @@ const ChildDiv = styled.div`
 const AddTokenCard = () => {
   const cakeContract = useCake()
 
-  const [tokenAddress, setTokenAddress] = useState("0x8d9087a2B7E446bb69343542e1430E974f12a18F")
+  const tokenAddress = getCakeAddress()
   const [copyTooltip, setCopyTooltip] = useState("Copy Address")
   const [isPending, setIsPending] = useState(false)
 
@@ -86,7 +87,7 @@ const AddTokenCard = () => {
 
   return (
     <MainContainer>
-      <Heading color="primary" size="xl" style={{ width:"100%",textAlign: "center" }}>Add Helium 3</Heading>
+      <Heading color="primary" size="xl" style={{ width:"100%",textAlign: "center" }}>Add Dequ</Heading>
       <div style={{width: "80%",margin: "0 auto", marginTop: "3em"}}>
         <ItemDiv>
           <div style={{width: "80px"}}>
