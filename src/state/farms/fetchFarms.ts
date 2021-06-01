@@ -21,7 +21,7 @@ const fetchFarms = async () => {
         },
         // Balance of quote token on LP contract
         {
-          address: farmConfig.quoteTokenAdresses[CHAIN_ID],
+          address: farmConfig.quoteTokenAddresses[CHAIN_ID],
           name: 'balanceOf',
           params: [lpAdress],
         },
@@ -43,7 +43,7 @@ const fetchFarms = async () => {
         },
         // Quote token decimals
         {
-          address: farmConfig.quoteTokenAdresses[CHAIN_ID],
+          address: farmConfig.quoteTokenAddresses[CHAIN_ID],
           name: 'decimals',
         },
       ]
@@ -92,7 +92,7 @@ const fetchFarms = async () => {
         }
       }
 
-      const [info, totalAllocPoint, Helium3PerBlock] = await multicall(masterchefABI, [
+      const [info, totalAllocPoint, DequPerBlock] = await multicall(masterchefABI, [
         {
           address: getMasterChefAddress(),
           name: 'poolInfo',
@@ -104,7 +104,7 @@ const fetchFarms = async () => {
         },
         {
           address: getMasterChefAddress(),
-          name: 'Helium3PerBlock',
+          name: 'DequPerBlock',
         },
       ])
 
@@ -121,7 +121,7 @@ const fetchFarms = async () => {
         multiplier: `${allocPoint.div(100).toString()}X`,
         depositFeeBP: info.depositFeeBP,
         harvestInterval: info.harvestInterval,
-        Helium3PerBlock: new BigNumber(Helium3PerBlock).toNumber(),
+        DequPerBlock: new BigNumber(DequPerBlock).toNumber(),
       }
     }),
   )

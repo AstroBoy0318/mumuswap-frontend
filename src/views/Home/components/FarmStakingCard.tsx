@@ -87,10 +87,10 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px" style={{ marginTop: '10px',textAlign: "left" }} color="primary">
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
-        <img src="/images/he3.png" alt="He3" style={{ width: "70px",marginBottom: "1em" }}/>
+        <img src="/images/dequ.png" alt="Dequ" style={{ width: "70px",marginBottom: "1em" }}/>
         <Block>
           <Row>
-            <Label>HE3 to Harvest</Label>
+            <Label>DEQU to Harvest</Label>
           </Row>
  		      <Row>
             <CakeHarvestBalance earningsSum={earningsSum}/>
@@ -99,7 +99,7 @@ const FarmedStakingCard = () => {
             <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
           </Row>
           <Row style={{marginTop: "1em"}}>
-            <Label>HE3 in Wallet</Label>
+            <Label>DEQU in Wallet</Label>
           </Row>
           <Row>
             <CakeWalletBalance cakeBalance={cakeBalance} />

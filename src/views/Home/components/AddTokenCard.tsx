@@ -90,7 +90,7 @@ const AddTokenCard = () => {
       <div style={{width: "80%",margin: "0 auto", marginTop: "3em"}}>
         <ItemDiv>
           <div style={{width: "80px"}}>
-            <img src="/images/he3.png" alt="He3" width="64px"/>
+            <img src="/images/dequ.png" alt="Dequ" width="64px"/>
           </div>
           <div>
             <div>
@@ -106,10 +106,10 @@ const AddTokenCard = () => {
         </ItemDiv>
         <ItemDiv style={{marginTop: "1em"}}>
           <ChildDiv>
-            <Button onClick={addToken} disabled={isPending}>Add He3 to <img src="/images/icons/metamask.png" alt="metamask"/></Button>
+            <Button onClick={addToken} disabled={isPending}>Add Dequ to <img src="/images/icons/metamask.png" alt="metamask"/></Button>
           </ChildDiv>
           <ChildDiv>
-            <Button onClick={buyToken}>Buy He3 to <img src="/images/icons/pancake.png" alt="pancake"/></Button>
+            <Button onClick={buyToken}>Buy Dequ to <img src="/images/icons/pancake.png" alt="pancake"/></Button>
           </ChildDiv>
         </ItemDiv>
       </div>

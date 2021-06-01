@@ -147,13 +147,13 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     : '-'
 
   const lpLabel = farm.lpSymbol
-  const earnLabel = 'HE3'
+  const earnLabel = 'DEQU'
   const farmAPY = farm.apy && farm.apy.times(new BigNumber(100)).toNumber().toLocaleString(undefined, {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   })
 
-  const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses, risk } = farm
+  const { quoteTokenAddresses, quoteTokenSymbol, tokenAddresses, risk } = farm
 
   return (
     <FCard>
@@ -176,7 +176,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
               <>
                 <ApyButton
                   lpLabel={lpLabel}
-                  quoteTokenAdresses={quoteTokenAdresses}
+                  quoteTokenAdresses={quoteTokenAddresses}
                   quoteTokenSymbol={quoteTokenSymbol}
                   tokenAddresses={tokenAddresses}
                   cakePrice={cakePrice}
@@ -230,7 +230,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
           }
           totalValueFormated={totalValueFormated}
           lpLabel={lpLabel}
-          quoteTokenAdresses={quoteTokenAdresses}
+          quoteTokenAdresses={quoteTokenAddresses}
           quoteTokenSymbol={quoteTokenSymbol}
           tokenAddresses={tokenAddresses}
         />

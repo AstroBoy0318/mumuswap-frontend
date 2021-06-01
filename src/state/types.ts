@@ -9,7 +9,7 @@ export interface Farm extends FarmConfig {
   poolWeight?: number
   depositFeeBP?: number
   harvestInterval?: number
-  Helium3PerBlock?: number
+  DequPerBlock?: number
     userData?: {
     allowance: BigNumber
     tokenBalance: BigNumber

@@ -2,7 +2,7 @@ import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
-  {
+  /* {
     pid: 0,
     risk: 5,
     lpSymbol: 'HE3-BUSD LP',
@@ -13,28 +13,28 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'HE3',
     tokenAddresses: {
       97: '',
-      56: '0x8d9087a2B7E446bb69343542e1430E974f12a18F',
+      56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
+    quoteTokenAddresses: contracts.busd,
+  }, */
   {
-    pid: 1,
+    pid: 0,
     risk: 5,
-    lpSymbol: 'HE3-BNB LP',
+    lpSymbol: 'DEQU-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0xE9bdEDA655699D7176e22C55f06C00461F0e98aF',
+      56: '0x6a7c132af4a5f592f970a21ad29d2ccc2ba40150',
     },
-    tokenSymbol: 'HE3',
+    tokenSymbol: 'DEQU',
     tokenAddresses: {
       97: '',
-      56: '0x8d9087a2B7E446bb69343542e1430E974f12a18F',
+      56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',
     },
     quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenAddresses: contracts.wbnb,
   },
-  {
+  /* {
     pid: 2,
     risk: 3,
     lpSymbol: 'BNB-BUSD LP',
@@ -49,7 +49,7 @@ const farms: FarmConfig[] = [
       56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenAddresses: contracts.busd,
   },  
   {
     pid: 4,
@@ -65,7 +65,7 @@ const farms: FarmConfig[] = [
       56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
     },
     quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenAddresses: contracts.wbnb,
   },
   {
     pid: 5,
@@ -81,7 +81,7 @@ const farms: FarmConfig[] = [
       56: '0x55d398326f99059ff775485246999027b3197955',
     },
     quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenAddresses: contracts.wbnb,
   },
   {
     pid: 10,
@@ -95,10 +95,10 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'HE3',
     tokenAddresses: {
       97: '',
-      56: '0x8d9087a2B7E446bb69343542e1430E974f12a18F',
+      56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenAddresses: contracts.busd,
   },
   {
     pid: 11,
@@ -115,7 +115,7 @@ const farms: FarmConfig[] = [
       56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenAddresses: contracts.busd,
   },  
   {
     pid: 7,
@@ -132,7 +132,7 @@ const farms: FarmConfig[] = [
       56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenAddresses: contracts.busd,
   },
   {
     pid: 3,
@@ -149,7 +149,7 @@ const farms: FarmConfig[] = [
       56: '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenAddresses: contracts.busd,
   },
   // {
   //   pid: 6,
@@ -166,7 +166,7 @@ const farms: FarmConfig[] = [
   //     56: '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c',
   //   },
   //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
+  //   quoteTokenAddresses: contracts.busd,
   // },  
   {
     pid: 8,
@@ -183,7 +183,7 @@ const farms: FarmConfig[] = [
       56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenAddresses: contracts.busd,
   },
   {
     pid: 9,
@@ -200,9 +200,9 @@ const farms: FarmConfig[] = [
       56: '0x55d398326f99059ff775485246999027b3197955',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenAddresses: contracts.busd,
   },
-  
+  */
 ]
 
 export default farms

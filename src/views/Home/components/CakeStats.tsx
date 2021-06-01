@@ -50,9 +50,9 @@ const CakeStats = () => {
   const cakeSupply = getBalanceNumber(circSupply);
   const marketCap = eggPrice.times(circSupply);
 
-  let Helium3PerBlock = 0;
-  if(farms && farms[0] && farms[0].Helium3PerBlock){
-    Helium3PerBlock = new BigNumber(farms[0].Helium3PerBlock).div(new BigNumber(10).pow(18)).toNumber();
+  let DequPerBlock = 0;
+  if(farms && farms[0] && farms[0].DequPerBlock){
+    DequPerBlock = new BigNumber(farms[0].DequPerBlock).div(new BigNumber(10).pow(18)).toNumber();
   }
 
   return (
@@ -62,7 +62,7 @@ const CakeStats = () => {
           Helium 3 Stats
         </Heading>
         <Row>
-          <Text fontSize="14px" color="text">Total HE3 Supply</Text>
+          <Text fontSize="14px" color="text">Total DEQU Supply</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
         </Row>
         <Row>
@@ -86,8 +86,8 @@ const CakeStats = () => {
           {maxTxAmount && <CardValue fontSize="14px" value={getBalanceNumber(maxTxAmount)} decimals={0} />}
         </Row>
         <Row>
-          <Text fontSize="14px" color="text">New HE3/block</Text>
-          <Text bold fontSize="14px">{Helium3PerBlock}</Text>
+          <Text fontSize="14px" color="text">New DEQU/block</Text>
+          <Text bold fontSize="14px">{DequPerBlock}</Text>
         </Row>
         <Row>
           <Text fontSize="14px" color="text">Transfer Tax</Text>
