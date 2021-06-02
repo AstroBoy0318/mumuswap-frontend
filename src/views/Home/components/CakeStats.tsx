@@ -59,10 +59,10 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody style={{padding: "24px 10px",paddingBottom: "5px"}}>
         <Heading size="xl" mb="24px" color="primary" style={{marginTop: '10px', marginBottom: '70px'}}>
-          Dequ 3 Stats
+          Mumu Stats
         </Heading>
         <Row>
-          <Text fontSize="14px" color="text">Total DEQU Supply</Text>
+          <Text fontSize="14px" color="text">Total Mumu Supply</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
         </Row>
         <Row>
@@ -86,7 +86,7 @@ const CakeStats = () => {
           {maxTxAmount && <CardValue fontSize="14px" value={getBalanceNumber(maxTxAmount)} decimals={0} />}
         </Row>
         <Row>
-          <Text fontSize="14px" color="text">New DEQU/block</Text>
+          <Text fontSize="14px" color="text">New Mumu/block</Text>
           <Text bold fontSize="14px">{DequPerBlock}</Text>
         </Row>
         <Row>

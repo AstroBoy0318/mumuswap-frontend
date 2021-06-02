@@ -16,7 +16,7 @@ import useAllEarnings from '../../../hooks/useAllEarnings'
 import { getBalanceNumber } from '../../../utils/formatBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-  background-image: url('/images/egg/husky.png');
+  background-image: url('/images/egg/mumu_back.png');
   background-repeat: no-repeat;
   background-position: 80% 50%;
   background-size: 35%;
@@ -87,10 +87,10 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px" style={{ marginTop: '10px',textAlign: "left" }} color="primary">
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
-        <img src="/images/dequ.png" alt="Dequ" style={{ width: "70px",marginBottom: "1em" }}/>
+        <img src="/images/mumu.png" alt="Mumu" style={{ width: "70px",marginBottom: "1em" }}/>
         <Block>
           <Row>
-            <Label>DEQU to Harvest</Label>
+            <Label>Mumu to Harvest</Label>
           </Row>
  		      <Row>
             <CakeHarvestBalance earningsSum={earningsSum}/>
@@ -99,7 +99,7 @@ const FarmedStakingCard = () => {
             <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
           </Row>
           <Row style={{marginTop: "1em"}}>
-            <Label>DEQU in Wallet</Label>
+            <Label>Mumu in Wallet</Label>
           </Row>
           <Row>
             <CakeWalletBalance cakeBalance={cakeBalance} />
@@ -118,7 +118,7 @@ const FarmedStakingCard = () => {
               fullWidth
             >
               {pendingTx
-                ? TranslateString(548, ' Hel3')
+                ? TranslateString(548, ' Mumu')
                 : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
             </Button>
           ) : (

@@ -5,7 +5,7 @@ const TopBar: React.FC = () => {
   const theme = useContext(ThemeContext)
   return (
     <StyledTopBar>
-      <div style={{fontSize: "40px", color: theme.colors.text, textAlign: "center"}}>Dequswap</div>
+      <div style={{fontSize: "40px", color: theme.colors.text, textAlign: "center"}}>Mumuswap</div>
       <div style={{fontSize: "16px", color: theme.colors.text, textAlign: "center", marginTop: "1em"}}>The first Space based Auto Liquidity Aquisition Yield Farm</div>
     </StyledTopBar>
   )

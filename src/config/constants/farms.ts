@@ -5,12 +5,12 @@ const farms: FarmConfig[] = [
   {
     pid: 1,
     risk: 5,
-    lpSymbol: 'DEQU-BUSD LP',
+    lpSymbol: 'Mumu-BUSD LP',
     lpAddresses: {
       97: '',
       56: '0xb3fed4405d8131e38a9101537ced45853aad4621',
     },
-    tokenSymbol: 'DEQU',
+    tokenSymbol: 'Mumu',
     tokenAddresses: {
       97: '',
       56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',
@@ -21,12 +21,12 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'DEQU-BNB LP',
+    lpSymbol: 'Mumu-BNB LP',
     lpAddresses: {
       97: '',
       56: '0x6a7c132af4a5f592f970a21ad29d2ccc2ba40150',
     },
-    tokenSymbol: 'DEQU',
+    tokenSymbol: 'Mumu',
     tokenAddresses: {
       97: '',
       56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',
@@ -86,12 +86,12 @@ const farms: FarmConfig[] = [
     pid: 3,
     risk: 5,
     isTokenOnly: true,
-    lpSymbol: 'DEQU',
+    lpSymbol: 'Mumu',
     lpAddresses: {
       97: '',
       56: '0xb3fed4405d8131e38a9101537ced45853aad4621', // EGG-BUSD LP
     },
-    tokenSymbol: 'DEQU',
+    tokenSymbol: 'Mumu',
     tokenAddresses: {
       97: '',
       56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',

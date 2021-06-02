@@ -2181,27 +2181,27 @@ var socials = [
     {
         label: "Github",
         icon: "GithubIcon",
-        href: "https://github.com/MoonHarvest",
+        href: "https://github.com/mumuswap",
     },
     {
         label: "Docs",
         icon: "DocIcon",
-        href: "https://docs.moonharvest.net/",
+        href: "https://docs.mumuswap.net/",
     },
     {
         label: "Medium",
         icon: "MediumIcon",
-        href: "https://moonharvestnet.medium.com",
+        href: "https://mumuswap.medium.com",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/moonharvestnet",
+        href: "https://twitter.com/mumuswap",
     },
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/Moonharvestnet",
+        href: "https://t.me/mumuSwap",
         // items: [
         //     {
         //         label: "English",
