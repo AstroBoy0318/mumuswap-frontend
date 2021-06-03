@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   }
   @font-face {
     font-family: "Bunny";
-    src: url(/fonts/bunny/bunny.otf);
+    src: url(/fonts/bunny/bunny.ttf);
   } 
   body {
     background-color: ${({ theme }) => theme.colors.background};

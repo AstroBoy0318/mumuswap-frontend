@@ -18,6 +18,11 @@ const config: MenuEntry[] = [
     href: '/craters',
   },
   {
+    label: 'Referrals',
+    icon: 'GroupsIcon',
+    href: '/referrals',
+  },
+  {
     label: 'Features',
     icon: 'PriceGuardIcon',
     items: [
