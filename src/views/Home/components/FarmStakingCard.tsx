@@ -18,8 +18,8 @@ import { getBalanceNumber } from '../../../utils/formatBalance'
 const StyledFarmStakingCard = styled(Card)`
   background-image: url('/images/egg/mumu_back.png');
   background-repeat: no-repeat;
-  background-position: 80% 50%;
-  background-size: 35%;
+  background-position: 85% 50%;
+  background-size: 45%;
   min-height: 376px;
   text-align: left;
   height: max-content;

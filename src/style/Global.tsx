@@ -10,18 +10,15 @@ declare module 'styled-components' {
 const GlobalStyle = createGlobalStyle`
   * {
     font-family: inherit;
+    letter-spacing: 0.1em !important;
   }
   @font-face {
-    font-family: "Mitr";
-    src: url(/fonts/mitr/MitrRegular400.ttf);
-  }  
-  @font-face {
-    font-family: "Futura_Bold";
-    src: url(/fonts/mitr/Futura Bold font.ttf);
+    font-family: "Bunny";
+    src: url(/fonts/bunny/bunny.otf);
   } 
   body {
     background-color: ${({ theme }) => theme.colors.background};
-    font-family: Mitr;
+    font-family: Bunny;
 
     img {
       height: auto;
