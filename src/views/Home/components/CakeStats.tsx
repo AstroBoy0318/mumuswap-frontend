@@ -50,9 +50,9 @@ const CakeStats = () => {
   const cakeSupply = getBalanceNumber(circSupply);
   const marketCap = eggPrice.times(circSupply);
 
-  let DequPerBlock = 0;
-  if(farms && farms[0] && farms[0].DequPerBlock){
-    DequPerBlock = new BigNumber(farms[0].DequPerBlock).div(new BigNumber(10).pow(18)).toNumber();
+  let MumuPerBlock = 0;
+  if(farms && farms[0] && farms[0].MumuPerBlock){
+    MumuPerBlock = new BigNumber(farms[0].MumuPerBlock).div(new BigNumber(10).pow(18)).toNumber();
   }
 
   return (
@@ -87,7 +87,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px" color="text">New Mumu/block</Text>
-          <Text bold fontSize="14px">{DequPerBlock}</Text>
+          <Text bold fontSize="14px">{MumuPerBlock}</Text>
         </Row>
         <Row>
           <Text fontSize="14px" color="text">Transfer Tax</Text>

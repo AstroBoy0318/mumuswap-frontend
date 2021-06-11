@@ -37,7 +37,7 @@ const HowItWorks = () => {
       <Text fontSize="16px" color="text">
         {TranslateString(
           999,
-          'Spend AOF to buy tickets, contributing to the lottery pot. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their exact order!',
+          'Spend Mumu to buy tickets, contributing to the lottery pot. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their exact order!',
         )}
       </Text>
       <StyledLink href="#">Read more</StyledLink>

@@ -36,7 +36,7 @@ const Refferals = () => {
   const TotalReferrals = myTotalReferrals.toNumber();
   const myTotalReferralCommissions = useTotalReferralCommissions(account);
   const TotalReferralCommissionsValue = myTotalReferralCommissions.toNumber() === 0?'0':((myTotalReferralCommissions.toNumber()/1000000000000000000)).toLocaleString('en-US', {minimumFractionDigits: 3})
-  const refferalsLink = "http://moonharvest.net/?ref=".concat(btoa(account))
+  const refferalsLink = "http://mumufinance.com/?ref=".concat(btoa(account))
   const [copyText, setCopyText] = useState("Copy")
   const handleCopy = ()=>{
     if (navigator.clipboard) {

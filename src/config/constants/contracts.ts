@@ -1,15 +1,15 @@
 export default {
   cake: {
     56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',
-    97: '',
+    97: '0x405fec416E850Ca37DFdfa103A0e307fc0BAe1ac',
   },
   masterChef: {
     56: '0x920d82aA6C4b7210E7a66154771e9C0cf7785ac8',
-    97: '',
+    97: '0xB6665ca24C8d079dbC470326C14cbb403CfeF136',
   },
   wbnb: {
     56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
-    97: '',
+    97: '0xae13d989dac2f0debff460ac112a837c89baa7cd',
   },
   lottery: {
     56: '0x8c89b19f1dBE30625eF6e88DfAe9Adb66B7561cb',
@@ -25,22 +25,22 @@ export default {
   },
   busd: {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
-    97: '',
+    97: '0xD500E3CF845CC41ABa54bB1dD426bD3485bD8Cd5',
   },
   pancakepair1: {
-    56: '0x6a7c132af4a5f592f970a21ad29d2ccc2ba40150',
-    97: '',
+    56: '0x9232D14201fDCb556E01625b31f3ba2B68a5aEfA',// TOKEN-BNB LP
+    97: '0x9232D14201fDCb556E01625b31f3ba2B68a5aEfA',
   },
   pancakepair2: {
-    56: '0x4Be36eE456c602dC119B763A2F867A3cdCfF0939',
-    97: '',
+    56: '0x5D42c0C002E64FE23DC291A4589AEb7F1E3e9D59',// TOKEN-BUSD LP
+    97: '0x5D42c0C002E64FE23DC291A4589AEb7F1E3e9D59',
   },
   referral: {
     56: '0x5229121121F0b6ED6225687332887B5B41544782',
-    97: '',
+    97: '0x3e83f9e2555AE65D67B874d55995811dFF2b4Cf4',
   },
   gettingtime: {
     56: '0xdE2488b53468eBF4aeF566719817dDe0231aF466',
-    97: '',
+    97: '0x61C4eC1435967BcE357069E876978E4c599EF90D',
   },
 }

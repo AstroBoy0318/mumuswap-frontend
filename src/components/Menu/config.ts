@@ -23,6 +23,11 @@ const config: MenuEntry[] = [
     href: '/referrals',
   },
   {
+    label: 'Lottery',
+    icon: 'TicketIcon',
+    href: '/lottery',
+  },
+  {
     label: 'Features',
     icon: 'PriceGuardIcon',
     items: [

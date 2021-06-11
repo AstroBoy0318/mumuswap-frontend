@@ -48,6 +48,9 @@ const fetchFarms = async () => {
         },
       ]
 
+      console.log(farmConfig.pid)
+      console.log(calls)
+
       const [
         tokenBalanceLP,
         quoteTokenBlanceLP,
@@ -56,6 +59,15 @@ const fetchFarms = async () => {
         tokenDecimals,
         quoteTokenDecimals
       ] = await multicall(erc20, calls)
+      console.log(farmConfig.pid)
+      console.log([
+        tokenBalanceLP,
+        quoteTokenBlanceLP,
+        lpTokenBalanceMC,
+        lpTotalSupply,
+        tokenDecimals,
+        quoteTokenDecimals
+      ]);
 
       let tokenAmount;
       let lpTotalInQuoteToken;
@@ -92,7 +104,7 @@ const fetchFarms = async () => {
         }
       }
 
-      const [info, totalAllocPoint, DequPerBlock] = await multicall(masterchefABI, [
+      const [info, totalAllocPoint, MumuPerBlock] = await multicall(masterchefABI, [
         {
           address: getMasterChefAddress(),
           name: 'poolInfo',
@@ -104,7 +116,7 @@ const fetchFarms = async () => {
         },
         {
           address: getMasterChefAddress(),
-          name: 'DequPerBlock',
+          name: 'MumuPerBlock',
         },
       ])
 
@@ -121,7 +133,7 @@ const fetchFarms = async () => {
         multiplier: `${allocPoint.div(100).toString()}X`,
         depositFeeBP: info.depositFeeBP,
         harvestInterval: info.harvestInterval,
-        DequPerBlock: new BigNumber(DequPerBlock).toNumber(),
+        DequPerBlock: new BigNumber(MumuPerBlock).toNumber(),
       }
     }),
   )
