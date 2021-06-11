@@ -41,7 +41,7 @@ const EarnAssetCard = () => {
         <Heading color="black" size="sm" style={{marginTop: '15px'}}>
           Earn
         </Heading>        
-        <CardMidContent color="#7f080e">AOF</CardMidContent>
+        <CardMidContent color="#7f080e">Mumu</CardMidContent>
           <Heading color="black" size="sm" style={{marginTop: '15px'}}>
             in Pools
           </Heading>

@@ -79,7 +79,7 @@ const FarmedStakingCard = () => {
     }
   }, [onMultiClaim, setRequestedClaim])
 
-  const [onPresentBuy] = useModal(<BuyModal max={pizzaBalance} tokenName="AOF" />)
+  const [onPresentBuy] = useModal(<BuyModal max={pizzaBalance} tokenName="Mumu" />)
 
   return (
     <StyledLotteryCard>

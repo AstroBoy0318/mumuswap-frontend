@@ -48,9 +48,6 @@ const fetchFarms = async () => {
         },
       ]
 
-      console.log(farmConfig.pid)
-      console.log(calls)
-
       const [
         tokenBalanceLP,
         quoteTokenBlanceLP,
@@ -59,15 +56,6 @@ const fetchFarms = async () => {
         tokenDecimals,
         quoteTokenDecimals
       ] = await multicall(erc20, calls)
-      console.log(farmConfig.pid)
-      console.log([
-        tokenBalanceLP,
-        quoteTokenBlanceLP,
-        lpTokenBalanceMC,
-        lpTotalSupply,
-        tokenDecimals,
-        quoteTokenDecimals
-      ]);
 
       let tokenAmount;
       let lpTotalInQuoteToken;
@@ -133,7 +121,7 @@ const fetchFarms = async () => {
         multiplier: `${allocPoint.div(100).toString()}X`,
         depositFeeBP: info.depositFeeBP,
         harvestInterval: info.harvestInterval,
-        DequPerBlock: new BigNumber(MumuPerBlock).toNumber(),
+        MumuPerBlock: new BigNumber(MumuPerBlock).toNumber(),
       }
     }),
   )

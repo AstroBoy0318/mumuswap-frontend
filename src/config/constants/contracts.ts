@@ -5,7 +5,7 @@ export default {
   },
   masterChef: {
     56: '0x920d82aA6C4b7210E7a66154771e9C0cf7785ac8',
-    97: '0xB6665ca24C8d079dbC470326C14cbb403CfeF136',
+    97: '0xe06c322a36284cA708B7EC696F9F309A4B898F3D',
   },
   wbnb: {
     56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
@@ -13,11 +13,11 @@ export default {
   },
   lottery: {
     56: '0x8c89b19f1dBE30625eF6e88DfAe9Adb66B7561cb',
-    97: '',
+    97: '0xe7C38211507B904cCf69c95328C159bCD9c5bB5b',
   },
   lotteryNFT: {
     56: '0xe763Ab864172c8fcf23faa277585d6283111792e',
-    97: '',
+    97: '0x10787098c3692Ab30aB286314913df308ADf042C',
   },
   mulltiCall: {
     56: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
@@ -37,7 +37,7 @@ export default {
   },
   referral: {
     56: '0x5229121121F0b6ED6225687332887B5B41544782',
-    97: '0x3e83f9e2555AE65D67B874d55995811dFF2b4Cf4',
+    97: '0x2C1D202A5Df99F0C7bb84d9947830CEBb4e7314e',
   },
   gettingtime: {
     56: '0xdE2488b53468eBF4aeF566719817dDe0231aF466',

@@ -73,17 +73,17 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
         onChange={handleChange}
         max={fullBalance}
         symbol="TICKET"
-        availableSymbol="AOF"
+        availableSymbol="Mumu"
       />
       <div>
-        <Tips>Your amount must be a multiple of 10 AOF</Tips>
-        <Tips>1 Ticket = 10 AOF</Tips>
+        <Tips>Your amount must be a multiple of 10 Mumu</Tips>
+        <Tips>1 Ticket = 10 Mumu</Tips>
       </div>
       <div>
         <Announce>         
-          Ticket purchases are final. Your AOF cannot be returned to you after buying tickets.         
+          Ticket purchases are final. Your Mumu cannot be returned to you after buying tickets.
         </Announce>
-        <Final>{TranslateString(460, `You will spend: ${cakeCosts(val)} AOF`)}</Final>
+        <Final>{TranslateString(460, `You will spend: ${cakeCosts(val)} Mumu`)}</Final>
       </div>
       <ModalActions>
         <Button fullWidth variant="secondary" onClick={onDismiss}>
