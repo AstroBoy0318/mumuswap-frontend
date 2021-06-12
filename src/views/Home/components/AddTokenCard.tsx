@@ -82,7 +82,7 @@ const AddTokenCard = () => {
   }
 
   const buyToken = ()=>{
-    window.open("https://exchange.pancakeswap.finance/#/swap?outputCurrency=".concat(tokenAddress))
+    window.open("https://dex.mumuswap.finance/#/swap?outputCurrency=".concat(tokenAddress))
   }
 
   return (

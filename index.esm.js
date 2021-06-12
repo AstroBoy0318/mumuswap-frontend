@@ -2186,7 +2186,7 @@ var socials = [
     {
         label: "Docs",
         icon: "DocIcon",
-        href: "https://docs.mumuswap.net/",
+        href: "https://docs.mumuswap.finance/",
     },
     {
         label: "Medium",
@@ -2201,7 +2201,7 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/mumuSwap",
+        href: "https://t.me/mumuswap",
         // items: [
         //     {
         //         label: "English",

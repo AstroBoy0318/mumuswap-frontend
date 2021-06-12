@@ -202,7 +202,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <Text style={{ fontSize: '15px' }}>
           Harvest Lockup
           <HelpDiv>
-            <a href="https://docs.moonharvest.net">
+            <a href="https://docs.mumuswap.finance">
               <HelpIcon color="primary" style={{width: "15px"}}/>
             </a>
             <span className="tooltip">

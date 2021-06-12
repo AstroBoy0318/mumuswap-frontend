@@ -13,9 +13,23 @@ const config: MenuEntry[] = [
     href: '/farms',
   },
   {
-    label: 'Craters',
+    label: 'Pools',
     icon: 'PoolIcon',
     href: '/craters',
+  },
+  {
+    label: 'Trade',
+    icon: 'TradeIcon',
+    items: [
+      {
+        label: 'Exchange',
+        href: 'https://dex.mumuswap.finance/#/swap'
+      },
+      {
+        label: 'Liquidity',
+        href: 'https://dex.mumuswap.finance/#/pool'
+      }
+    ]
   },
   {
     label: 'Referrals',
@@ -33,19 +47,19 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Automatic LP',
-        href: 'https://docs.mumuswap.net/',
+        href: 'https://docs.mumuswap.finance/',
       },
       {
         label: 'Automatic Burning',
-        href: 'https://docs.mumuswap.net/automatic-burning',
+        href: 'https://docs.mumuswap.finance/automatic-burning',
       },
       {
         label: 'Referral Program',
-        href: 'https://docs.mumuswap.net/referral-program',
+        href: 'https://docs.mumuswap.finance/referral-program',
       },
       {
         label: 'Anti Whale',
-        href: 'https://docs.mumuswap.net/anti-whale',
+        href: 'https://docs.mumuswap.finance/anti-whale',
       },
     ],
   },
@@ -69,11 +83,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://docs.mumuswap.net/',
+        href: 'https://docs.mumuswap.finance/',
       },
       {
         label: 'Roadmap',
-        href: 'https://docs.mumuswap.net/roadmap',
+        href: 'https://docs.mumuswap.finance/roadmap',
       },
       {
         label: 'Blog',
