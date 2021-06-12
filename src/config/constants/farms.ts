@@ -7,12 +7,12 @@ const farms: FarmConfig[] = [
     risk: 5,
     lpSymbol: 'Mumu-BUSD LP',
     lpAddresses: {
-      97: '0x5D42c0C002E64FE23DC291A4589AEb7F1E3e9D59',
+      97: '0x8acEe19Fa508f9Bfded71e55d457cC9AE05Ad116',
       56: '0xb3fed4405d8131e38a9101537ced45853aad4621',
     },
     tokenSymbol: 'Mumu',
     tokenAddresses: {
-      97: '0x405fec416E850Ca37DFdfa103A0e307fc0BAe1ac',
+      97: '0x9E0d46143303dE7296e68F38936564ce195FF04f',
       56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
@@ -23,12 +23,12 @@ const farms: FarmConfig[] = [
     risk: 5,
     lpSymbol: 'Mumu-BNB LP',
     lpAddresses: {
-      97: '0x9232D14201fDCb556E01625b31f3ba2B68a5aEfA',
+      97: '0xf40800a2303606c01eb08086ed479b87ac9c34e1',
       56: '0x6a7c132af4a5f592f970a21ad29d2ccc2ba40150',
     },
     tokenSymbol: 'Mumu',
     tokenAddresses: {
-      97: '0x405fec416E850Ca37DFdfa103A0e307fc0BAe1ac',
+      97: '0x9E0d46143303dE7296e68F38936564ce195FF04f',
       56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',
     },
     quoteTokenSymbol: QuoteToken.BNB,
@@ -39,7 +39,7 @@ const farms: FarmConfig[] = [
     risk: 3,
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
-      97: '0x6af9459895912c5f5FCE641E6B69631ac801AA32',
+      97: '0xa79fe8865fb3c3c053ee63ba8b7f90dda5c3f334',
       56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },
     tokenSymbol: 'BNB',
@@ -88,12 +88,12 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpSymbol: 'Mumu',
     lpAddresses: {
-      97: '0x5D42c0C002E64FE23DC291A4589AEb7F1E3e9D59',
+      97: '0x8acEe19Fa508f9Bfded71e55d457cC9AE05Ad116',
       56: '0xb3fed4405d8131e38a9101537ced45853aad4621', // EGG-BUSD LP
     },
     tokenSymbol: 'Mumu',
     tokenAddresses: {
-      97: '0x405fec416E850Ca37DFdfa103A0e307fc0BAe1ac',
+      97: '0x9E0d46143303dE7296e68F38936564ce195FF04f',
       56: '0x8dbc30110397b6f764cc6621e6b183c6412b4f34',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
