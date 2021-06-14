@@ -23,11 +23,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://dex.mumuswap.finance/#/swap'
+        href: 'https://trade.mumuswap.finance/#/swap'
       },
       {
         label: 'Liquidity',
-        href: 'https://dex.mumuswap.finance/#/pool'
+        href: 'https://trade.mumuswap.finance/#/pool'
       }
     ]
   },

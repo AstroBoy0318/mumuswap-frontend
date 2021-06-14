@@ -89,7 +89,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Mumu',
     lpAddresses: {
       97: '0x8acEe19Fa508f9Bfded71e55d457cC9AE05Ad116',
-      56: '0xb3fed4405d8131e38a9101537ced45853aad4621', // EGG-BUSD LP
+      56: '0x21CE11D6bfcB4088B0E28c265AD79A7Af2814B9f', // EGG-BUSD LP
     },
     tokenSymbol: 'Mumu',
     tokenAddresses: {

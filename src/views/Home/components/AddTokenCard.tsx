@@ -16,6 +16,8 @@ const MainContainer = styled(Card)`
 const TooltipButton = styled(Button)`
   overflow: visible;
   position: relative;
+  word-break: break-all;
+  max-width: 100%;
   & > .tooltip{
     display: none;
     position: absolute;
@@ -35,9 +37,16 @@ const TooltipButton = styled(Button)`
 const ItemDiv = styled.div`
   color: ${({ theme }) => theme.colors.text};
   font-size: 20px;
-  display: flex;
-  justify-content: space-between;
   line-height: 1.1em;
+  text-align: center;
+  & > div{
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+  ${({ theme }) => theme.mediaQueries.md}{
+    display: flex;
+    justify-content: space-between;
+  }
 `
 const ChildDiv = styled.div`
   width: 50%;
@@ -88,9 +97,9 @@ const AddTokenCard = () => {
   return (
     <MainContainer>
       <Heading color="primary" size="xl" style={{ width:"100%",textAlign: "center" }}>Add Mumu</Heading>
-      <div style={{width: "80%",margin: "0 auto", marginTop: "3em"}}>
+      <div style={{width: "80%",minWidth: "400px", margin: "0 auto", marginTop: "3em"}}>
         <ItemDiv>
-          <div style={{width: "80px"}}>
+          <div style={{width: "80px", minWidth: "80px"}}>
             <img src="/images/mumu.png" alt="Mumu" width="64px"/>
           </div>
           <div>
