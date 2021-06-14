@@ -13,6 +13,7 @@ export interface ExpandableSectionProps {
   lpLabel?: string
   quoteTokenAdresses?: Address
   quoteTokenSymbol?: string
+  pid?: number
   tokenAddresses: Address
 }
 
@@ -37,6 +38,7 @@ const StyledLinkExternal = styled(LinkExternal)`
 
 const DetailsSection: React.FC<ExpandableSectionProps> = ({
   isTokenOnly,
+  pid,
   bscScanAddress,
   removed,
   totalValueFormated,
@@ -47,6 +49,7 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
 }) => {
   const TranslateString = useI18n()
   const liquidityUrlPathParts = getLiquidityUrlPathParts({ quoteTokenAdresses, quoteTokenSymbol, tokenAddresses })
+  const buyUrl = (pid === 2?`https://exchange.pancakeswap.finance/#/add/${liquidityUrlPathParts}`:`https://trade.mumuswap.finance/#/add/${liquidityUrlPathParts}`)
 
   return (
     <Wrapper>
@@ -54,9 +57,9 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
         <Text>{TranslateString(316, 'Stake')}:</Text>
         <StyledLinkExternal href={
           isTokenOnly ?
-            `https://dex.mumuswap.finance/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
+            `https://trade.mumuswap.finance/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
             :
-          `https://dex.mumuswap.finance/#/add/${liquidityUrlPathParts}`
+          buyUrl
         }>
           {lpLabel}
         </StyledLinkExternal>
