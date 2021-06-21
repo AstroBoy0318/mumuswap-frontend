@@ -43,7 +43,7 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
     <Flex mb="8px" justifyContent="space-between" alignItems="center" style={{marginTop: "-5px"}}>
       <Heading color={rawEarningsBalance === 0 ? 'text' : 'text'}>{displayBalance}</Heading>
       <BalanceAndCompound>
-        {pid === 10 ?
+        {pid >= 0 ?
           <HarvestButton
             disabled={rawEarningsBalance === 0 || pendingTx || harvestTime-nowTime > 0}
             size='sm'

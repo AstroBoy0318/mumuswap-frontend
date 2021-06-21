@@ -65,8 +65,6 @@ export const useHarvestTime = (farmPid: number) => {
     const fetchTime = async () => {
       if(account && time === 0) {
         const res = await masterChefContract.methods.userInfo(farmPid, account).call()
-        // const now = await gettingtimeContract.methods.gettingtime().call()
-        console.log("interval:".concat(res.nextHarvestUntil))
         setTime(res.nextHarvestUntil)
       }
     }

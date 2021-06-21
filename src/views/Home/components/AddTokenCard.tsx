@@ -50,6 +50,7 @@ const ItemDiv = styled.div`
 `
 const ChildDiv = styled.div`
   width: 50%;
+  min-width: 300px;
   text-align: center;
   &>button>img{
     width: 32px;
@@ -97,7 +98,7 @@ const AddTokenCard = () => {
   return (
     <MainContainer>
       <Heading color="primary" size="xl" style={{ width:"100%",textAlign: "center" }}>Add Mumu</Heading>
-      <div style={{width: "80%",minWidth: "400px", margin: "0 auto", marginTop: "3em"}}>
+      <div style={{width: "80%",minWidth: "300px", margin: "0 auto", marginTop: "3em"}}>
         <ItemDiv>
           <div style={{width: "80px", minWidth: "80px"}}>
             <img src="/images/mumu.png" alt="Mumu" width="64px"/>
