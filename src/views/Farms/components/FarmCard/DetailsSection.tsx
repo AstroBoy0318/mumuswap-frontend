@@ -49,7 +49,7 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
 }) => {
   const TranslateString = useI18n()
   const liquidityUrlPathParts = getLiquidityUrlPathParts({ quoteTokenAdresses, quoteTokenSymbol, tokenAddresses })
-  const buyUrl = (pid === 2?`https://exchange.pancakeswap.finance/#/add/${liquidityUrlPathParts}`:`https://trade.mumuswap.finance/#/add/${liquidityUrlPathParts}`)
+  const buyUrl = (pid === -1?`https://exchange.pancakeswap.finance/#/add/${liquidityUrlPathParts}`:`https://trade.mumuswap.finance/#/add/${liquidityUrlPathParts}`)
 
   return (
     <Wrapper>

@@ -1,6 +1,6 @@
 // BEP-20 addresses.
-export const CAKE = "0xAa540172005Dfa29Fe8CE67dAc8D9654C52DA499";
+export const CAKE = "0x3bdbbf63fbed8550dd630f67fc5e4c2ac4ddc42b";
 export const SYRUP = "0x009cF7bC57584b7998236eff51b98A168DceA9B0";
 
 // Contract addresses.
-export const LOTTERY_CONTRACT = "0xA4be21537b51CEbac5CFE1CeB6124e60e3A5E7E4";
+export const LOTTERY_CONTRACT = "0x3962139475af84199c54D8B4840Ac4600870Bb97";

@@ -8,12 +8,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Mumu-BUSD LP',
     lpAddresses: {
       97: '0x383489bD934B077Ac0b3A9325E73BF72D9835AdA',
-      56: '0xE82F9466045641Df255F348C415E24Aa18b049cD',
+      56: '0xA0B0923621b5CFa654145604E286CA813C3C661B',
     },
     tokenSymbol: 'Mumu',
     tokenAddresses: {
       97: '0x47572493C7DD70653940Dff6444897712a007EDC',
-      56: '0xAa540172005Dfa29Fe8CE67dAc8D9654C52DA499',
+      56: '0x3bdbbf63fbed8550dd630f67fc5e4c2ac4ddc42b',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAddresses: contracts.busd,
@@ -24,12 +24,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Mumu-BNB LP',
     lpAddresses: {
       97: '0xa40f90E8e60928eB56FEa610D0591D776ab54CC6',
-      56: '0x10934D483c3C6057A132532838a63d507c0C543F',
+      56: '0xD99Caa5110Bf465B05cdef0690Db0771732d937F',
     },
     tokenSymbol: 'Mumu',
     tokenAddresses: {
       97: '0x47572493C7DD70653940Dff6444897712a007EDC',
-      56: '0xAa540172005Dfa29Fe8CE67dAc8D9654C52DA499',
+      56: '0x3bdbbf63fbed8550dd630f67fc5e4c2ac4ddc42b',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAddresses: contracts.wbnb,
@@ -40,7 +40,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
       97: '0xa79fe8865fb3c3c053ee63ba8b7f90dda5c3f334',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+      56: '0x83166DaF1a93F7C8B31c4e09Cc85316a37dC2451',
     },
     tokenSymbol: 'BNB',
     tokenAddresses: {
@@ -57,12 +57,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Mumu',
     lpAddresses: {
       97: '0x383489bD934B077Ac0b3A9325E73BF72D9835AdA',
-      56: '0xE82F9466045641Df255F348C415E24Aa18b049cD', // EGG-BUSD LP
+      56: '0xA0B0923621b5CFa654145604E286CA813C3C661B', // EGG-BUSD LP
     },
     tokenSymbol: 'Mumu',
     tokenAddresses: {
       97: '0x47572493C7DD70653940Dff6444897712a007EDC',
-      56: '0xAa540172005Dfa29Fe8CE67dAc8D9654C52DA499',
+      56: '0x3bdbbf63fbed8550dd630f67fc5e4c2ac4ddc42b',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAddresses: contracts.busd,

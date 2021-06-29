@@ -47,19 +47,19 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Automatic LP',
-        href: 'https://docs.mumuswap.finance/',
+        href: 'https://mumuswapfinance.gitbook.io/mumuswap/automatic-liquidity',
       },
       {
         label: 'Automatic Burning',
-        href: 'https://docs.mumuswap.finance/automatic-burning',
+        href: 'https://mumuswapfinance.gitbook.io/mumuswap/automatic-burn',
       },
       {
         label: 'Referral Program',
-        href: 'https://docs.mumuswap.finance/referral-program',
+        href: 'https://mumuswapfinance.gitbook.io/mumuswap/referral-program',
       },
       {
         label: 'Anti Whale',
-        href: 'https://docs.mumuswap.finance/anti-whale',
+        href: 'https://mumuswapfinance.gitbook.io/mumuswap/anti-whale',
       },
     ],
   },
@@ -83,11 +83,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://docs.mumuswap.finance/',
+        href: 'https://mumuswapfinance.gitbook.io/mumuswap/',
       },
       {
         label: 'Roadmap',
-        href: 'https://docs.mumuswap.finance/roadmap',
+        href: 'https://mumuswapfinance.gitbook.io/roadmap/',
       },
       {
         label: 'Blog',

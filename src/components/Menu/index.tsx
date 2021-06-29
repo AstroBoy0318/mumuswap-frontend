@@ -6,6 +6,7 @@ import useTheme from 'hooks/useTheme'
 import { usePriceCakeBusd } from 'state/hooks'
 import { Menu as UikitMenu } from '@pancakeswap-libs/uikit'
 import config from './config'
+import addresses from '../../config/constants/contracts'
 
 const Menu = (props) => {
   const { account, connect, reset } = useWallet()
@@ -25,7 +26,7 @@ const Menu = (props) => {
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={config}
-      priceLink="https://bscscan.com/address/0x8d9087a2B7E446bb69343542e1430E974f12a18F"
+      priceLink={"https://bscscan.com/address/".concat(addresses.cake[process.env.REACT_APP_CHAIN_ID])}
       {...props}
     />
   )
