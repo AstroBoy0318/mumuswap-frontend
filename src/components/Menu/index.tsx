@@ -26,7 +26,7 @@ const Menu = (props) => {
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={config}
-      priceLink={"https://bscscan.com/address/".concat(addresses.cake[process.env.REACT_APP_CHAIN_ID])}
+      priceLink={"https://polygonscan.com/address/".concat(addresses.cake[process.env.REACT_APP_CHAIN_ID])}
       {...props}
     />
   )

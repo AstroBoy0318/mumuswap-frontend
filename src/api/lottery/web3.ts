@@ -8,6 +8,9 @@ const BSC_NODE_RPC = {
   ],
   "97": [
     "https://data-seed-prebsc-1-s1.binance.org:8545"
+  ],
+  "137":[
+    "https://rpc-mainnet.maticvigil.com/"
   ]
 };
 

@@ -92,7 +92,7 @@ const AddTokenCard = () => {
   }
 
   const buyToken = ()=>{
-    window.open("https://trade.mumuswap.finance/#/swap?outputCurrency=".concat(tokenAddress))
+    window.open("https://quickswap.exchange/#/swap?outputCurrency=".concat(tokenAddress))
   }
 
   return (

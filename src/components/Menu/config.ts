@@ -23,11 +23,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://trade.mumuswap.finance/#/swap'
+        href: 'https://quickswap.exchange/#/swap'
       },
       {
         label: 'Liquidity',
-        href: 'https://trade.mumuswap.finance/#/pool'
+        href: 'https://quickswap.exchange/#/pool'
       }
     ]
   },
@@ -69,7 +69,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'BscScan',
-        href: 'https://bscscan.com/address/'.concat(getCakeAddress()),
+        href: 'https://polygonscan.com/address/'.concat(getCakeAddress()),
       }
     ],
   },

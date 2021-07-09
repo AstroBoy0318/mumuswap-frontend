@@ -51,7 +51,7 @@ const LPWorth = () => {
       <div style={{width: "80%",margin: "0 auto", marginTop: "3em"}}>
       <ItemDiv>
         <LabelDiv>
-          Mumu-BNB
+          Mumu-Matic
         </LabelDiv>
         <ValueDiv>
           ${ showlpprice1 !== 'NaN'?showlpprice1:0 }
@@ -60,7 +60,7 @@ const LPWorth = () => {
       </ItemDiv>
         <ItemDiv>
           <LabelDiv>
-            Mumu-BUSD
+            Mumu-USDC
           </LabelDiv>
           <ValueDiv>
             ${ showlpprice2 !== 'NaN'?showlpprice2:0 }

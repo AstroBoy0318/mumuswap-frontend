@@ -18,7 +18,16 @@ export interface Ifo {
   tokenDecimals: number
   releaseBlockNumber: number
 }
-
+/*
+export enum QuoteToken {
+  'BNB' = 'BNB',
+  'CAKE' = 'CAKE',
+  'SYRUP' = 'SYRUP',
+  'BUSD' = 'BUSD',
+  'TWT' = 'TWT',
+  'UST' = 'UST',
+}
+*/
 export enum QuoteToken {
   'BNB' = 'BNB',
   'CAKE' = 'CAKE',
@@ -36,7 +45,8 @@ export enum PoolCategory {
 
 export interface Address {
   97?: string
-  56: string
+  56: string,
+  137?: string
 }
 
 export interface FarmConfig {

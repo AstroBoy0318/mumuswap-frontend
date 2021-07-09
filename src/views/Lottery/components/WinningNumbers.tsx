@@ -57,7 +57,7 @@ const WinningNumbers: React.FC = () => {
                 </CenteredTextWithPadding>
               </RowNoPadding>
             </Column>
-            <Link href="https://bscscan.com/" target="_blank" style={{color:colors.primary,fontSize:"16px",textAlign:"center" }}>
+            <Link href="https://polygonscan.com/" target="_blank" style={{color:colors.primary,fontSize:"16px",textAlign:"center" }}>
               {TranslateString(448, 'Export recent winning numbers')}
             </Link>
           </StyledCardContentInner>

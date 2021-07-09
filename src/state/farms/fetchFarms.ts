@@ -5,6 +5,7 @@ import multicall from 'utils/multicall'
 import { getMasterChefAddress } from 'utils/addressHelpers'
 import farmsConfig from 'config/constants/farms'
 import { QuoteToken } from '../../config/constants/types'
+import contracts from '../../config/constants/contracts'
 
 const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
 
@@ -65,7 +66,12 @@ const fetchFarms = async () => {
         if(farmConfig.tokenSymbol === QuoteToken.BUSD && farmConfig.quoteTokenSymbol === QuoteToken.BUSD){
           tokenPriceVsQuote = new BigNumber(1);
         }else{
-          tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP));
+          let quoteTokenBlanceLP1 = new BigNumber(quoteTokenBlanceLP);
+          if(quoteTokenDecimals < 18)
+          {
+            quoteTokenBlanceLP1 = quoteTokenBlanceLP1.times(new BigNumber(10).pow(18-quoteTokenDecimals));
+          }
+          tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP1).div(new BigNumber(tokenBalanceLP));
         }
         lpTotalInQuoteToken = tokenAmount.times(tokenPriceVsQuote);
       }else{
@@ -81,6 +87,7 @@ const fetchFarms = async () => {
 
         // Amount of token in the LP that are considered staking (i.e amount of token * lp ratio)
         tokenAmount = new BigNumber(tokenBalanceLP).div(new BigNumber(10).pow(tokenDecimals)).times(lpTokenRatio)
+
         const quoteTokenAmount = new BigNumber(quoteTokenBlanceLP)
           .div(new BigNumber(10).pow(quoteTokenDecimals))
           .times(lpTokenRatio)
@@ -88,7 +95,12 @@ const fetchFarms = async () => {
         if(tokenAmount.comparedTo(0) > 0){
           tokenPriceVsQuote = quoteTokenAmount.div(tokenAmount);
         }else{
-          tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP));
+          let quoteTokenBlanceLP1 = new BigNumber(quoteTokenBlanceLP);
+          if(quoteTokenDecimals < 18)
+          {
+            quoteTokenBlanceLP1 = quoteTokenBlanceLP1.times(new BigNumber(10).pow(18-quoteTokenDecimals));
+          }
+          tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP1).div(new BigNumber(tokenBalanceLP));
         }
       }
 
